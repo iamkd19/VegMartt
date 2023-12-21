@@ -1,0 +1,30 @@
+---
+version: "1.0"
+application:
+  name: vegmart
+  project: mini-project
+database:
+  - type: mongodb
+    version: "12"
+    name: your-database-name
+    storage_size: 10
+    storage_path: /var/lib/postgresql/data
+router:
+  routes:
+    - application_name: your-a
+      paths:
+        - "/*"
+backend:
+  language: nodejs
+  description: "Your Node.js backend description"
+  databases:
+    - name: mongodb
+      mount_path: /mnt/data
+      connection_url: your-database-connection-url
+  deployment_branch:
+    production: main
+  pre_build_commands:
+    - npm ci
+    - npm run build:client
+    - npm run build:server
+  startup_command: npm start

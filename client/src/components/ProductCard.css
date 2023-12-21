@@ -1,0 +1,43 @@
+.product-box {
+    border: 1px solid #ccc;
+    padding: 16px;
+    text-align: center;
+    max-width: 300px;
+    margin: 16px;
+  }
+  
+  .product-box img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .product-box h2 {
+    font-size: 1.2rem;
+    margin: 8px 0;
+  }
+  
+  .product-box p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .product-box .product-price {
+    font-size: 1.2rem;
+    color: #e91e63;
+    margin-top: 8px;
+  }
+  
+  .product-box button {
+    background-color: #d4d11b;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-box button:hover {
+    background-color: #c2185b;
+  }
+  
